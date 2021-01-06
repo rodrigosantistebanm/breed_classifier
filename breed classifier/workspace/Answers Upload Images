@@ -1,0 +1,21 @@
+# Question 1
+VGG classified Dog_01.jpg as a 'french bulldog', RESNET as a 'boxer' and ALEXNET as a 'saint bernard, st bernard'.
+
+# Question 2
+The classifications of Dog_02.jpg in the three architechtures are different from the classifications of Dog_01.jpg.
+--- VGG: 'boxer'
+--- RESNET: 'american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull'
+--- ALEXNET: 'boxer'
+
+# Question 3
+All of the architechtures classified Ball_01.jpg and Giraffe_01.jpg as not dogs.
+--- VGG: 'rugby ball' and 'gazelle'
+--- RESNET: 'soccer ball' and 'cheetah, chetah, acinonyx jubatus'
+--- ALEXNET: 'soccer ball' and 'cheetah, chetah, acinonyx jubatus'
+
+# Question 4
+I think that VGG architechture did the best work classifying the images because Dog_01.jpg was a picture of a 'french
+bulldog'and this architechture classified the image correctly. Although VGG misclassfied Dog_02.jpg as a 'boxer', the
+cheeks of dogs that belong to both breeds are similar and VGG maybe had a confussion there. The three architechtures
+classified Ball_01.jpg as a ball and all three of them misclassified Giraffe_01.jpg ('gazelle', 'cheetah, chetah, acinonyx jubatus').
+Saying all that, and being the main objective of the classifier to classify breeds of dogs, VGG is the best architechture.

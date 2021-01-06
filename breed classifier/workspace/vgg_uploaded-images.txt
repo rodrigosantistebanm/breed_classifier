@@ -1,0 +1,77 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                    Ball_01.jpg  label:                       ball
+ 2 key:                     Dog_02.jpg  label:                        dog
+ 3 key:                     Dog_01.jpg  label:                        dog
+ 4 key:                 Giraffe_01.jpg  label:                    giraffe
+
+     MATCH:
+
+                   Ball_01.jpg: 
+Real:                       ball   Classifier:                     rugby ball
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                 french bulldog
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                          boxer
+
+                Giraffe_01.jpg: 
+Real:                    giraffe   Classifier:                        gazelle
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+     MATCH:
+
+                   Ball_01.jpg: 
+Real:                       ball   Classifier:                     rugby ball  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                 french bulldog  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                          boxer  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                Giraffe_01.jpg: 
+Real:                    giraffe   Classifier:                        gazelle  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+The model running is: VGG.
+There are 4 images in total.
+From the total images, 2 are dog images.
+From the total images, 2 are not dog images.
+
+
+SUMMARY STATISTICS
+
+
+pct_match: 50.0 %
+pct_correct_dogs: 100.0 %
+pct_correct_breed: 50.0 %
+pct_correct_notdogs: 100.0 %
+
+Incorrect Breed Assignment:
+Real breed: dog, Predicted breed: boxer
+
+** Total Elapsed Runtime: 0:0:3

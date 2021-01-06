@@ -1,0 +1,78 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                    Ball_01.jpg  label:                       ball
+ 2 key:                     Dog_02.jpg  label:                        dog
+ 3 key:                     Dog_01.jpg  label:                        dog
+ 4 key:                 Giraffe_01.jpg  label:                    giraffe
+
+     MATCH:
+
+                   Ball_01.jpg: 
+Real:                       ball   Classifier:                    soccer ball
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                          boxer
+
+                Giraffe_01.jpg: 
+Real:                    giraffe   Classifier: cheetah, chetah, acinonyx jubatus
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                   Ball_01.jpg: 
+Real:                       ball   Classifier:                    soccer ball  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                          boxer  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                Giraffe_01.jpg: 
+Real:                    giraffe   Classifier: cheetah, chetah, acinonyx jubatus  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+The model running is: RESNET.
+There are 4 images in total.
+From the total images, 2 are dog images.
+From the total images, 2 are not dog images.
+
+
+SUMMARY STATISTICS
+
+
+pct_match: 25.0 %
+pct_correct_dogs: 100.0 %
+pct_correct_breed: 0.0 %
+pct_correct_notdogs: 100.0 %
+
+Incorrect Breed Assignment:
+Real breed: dog, Predicted breed: american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier
+Real breed: dog, Predicted breed: boxer
+
+** Total Elapsed Runtime: 0:0:0
